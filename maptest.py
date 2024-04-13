@@ -23,4 +23,4 @@ for record in records:
 map = folium.Map(location=[29.9652, -90.108948], zoom_start=20) # starts zoom in map.html close to school
 map.save('map.html')
 
-auto_open('map.html')
+auto_open('templates/map.html')
