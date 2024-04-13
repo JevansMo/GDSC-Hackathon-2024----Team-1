@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_bdd79551b4d66e6e8db88123fb56a77a {
+                #map_bbaf9fd895376f359991e52f0498b463 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_bdd79551b4d66e6e8db88123fb56a77a" ></div>
+            <div class="folium-map" id="map_bbaf9fd895376f359991e52f0498b463" ></div>
         
 </body>
 <script>
     
     
-            var map_bdd79551b4d66e6e8db88123fb56a77a = L.map(
-                "map_bdd79551b4d66e6e8db88123fb56a77a",
+            var map_bbaf9fd895376f359991e52f0498b463 = L.map(
+                "map_bbaf9fd895376f359991e52f0498b463",
                 {
                     center: [29.9652, -90.108948],
                     crs: L.CRS.EPSG3857,
-                    zoom: 20,
+                    zoom: 13,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,13 +60,76 @@
 
         
     
-            var tile_layer_519d566fd6df28161a848da713552b2a = L.tileLayer(
+            var tile_layer_985d84df226c3d470418db035377a31d = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_519d566fd6df28161a848da713552b2a.addTo(map_bdd79551b4d66e6e8db88123fb56a77a);
+            tile_layer_985d84df226c3d470418db035377a31d.addTo(map_bbaf9fd895376f359991e52f0498b463);
         
+    
+            var marker_cb520b35a65dbbfc504afed14437e03b = L.marker(
+                [29.962761, -90.105713],
+                {}
+            ).addTo(map_bbaf9fd895376f359991e52f0498b463);
+        
+    
+        var popup_d6c66456e2c28933af54ce2e3fefe569 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec6c14e092e97e28c9c14cb870340374 = $(`<div id="html_ec6c14e092e97e28c9c14cb870340374" style="width: 100.0%; height: 100.0%;">University Center - XULA</div>`)[0];
+                popup_d6c66456e2c28933af54ce2e3fefe569.setContent(html_ec6c14e092e97e28c9c14cb870340374);
+            
+        
+
+        marker_cb520b35a65dbbfc504afed14437e03b.bindPopup(popup_d6c66456e2c28933af54ce2e3fefe569)
+        ;
+
+        
+    
+    
+            var marker_f43d7d3ebc393ede25000a181ab5b4e3 = L.marker(
+                [30.00358, -90.076927],
+                {}
+            ).addTo(map_bbaf9fd895376f359991e52f0498b463);
+        
+    
+        var popup_1a6c5b1058b751247f041eabdad71694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c5ef7eaf1dc3cc6b9e35989c67f7dc4 = $(`<div id="html_3c5ef7eaf1dc3cc6b9e35989c67f7dc4" style="width: 100.0%; height: 100.0%;">Privateer Place - UNO</div>`)[0];
+                popup_1a6c5b1058b751247f041eabdad71694.setContent(html_3c5ef7eaf1dc3cc6b9e35989c67f7dc4);
+            
+        
+
+        marker_f43d7d3ebc393ede25000a181ab5b4e3.bindPopup(popup_1a6c5b1058b751247f041eabdad71694)
+        ;
+
+        
+    
+    
+            var marker_f8dc09b24327946f86966edc93f0010e = L.marker(
+                [29.956141, -90.086243],
+                {}
+            ).addTo(map_bbaf9fd895376f359991e52f0498b463);
+        
+    
+        var popup_62b17b0bcb8a41220a18729a3d43f8fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5535564bcf692f7ce823e5fb1d277c88 = $(`<div id="html_5535564bcf692f7ce823e5fb1d277c88" style="width: 100.0%; height: 100.0%;">The Residences - LSU</div>`)[0];
+                popup_62b17b0bcb8a41220a18729a3d43f8fe.setContent(html_5535564bcf692f7ce823e5fb1d277c88);
+            
+        
+
+        marker_f8dc09b24327946f86966edc93f0010e.bindPopup(popup_62b17b0bcb8a41220a18729a3d43f8fe)
+        ;
+
+        
+    
 </script>
 </html>
