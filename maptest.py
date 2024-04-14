@@ -2,9 +2,11 @@ import csv
 import folium
 import webbrowser
 
+
 def auto_open(path):
     html_page = f'{path}'
     webbrowser.open(html_page, new=2)
+
 
 filename = 'ShuttleData.csv'
 keys = ('\ufeffPlace', 'Longitude', 'Latitude')
