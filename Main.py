@@ -3,12 +3,15 @@
 from flask import Flask, render_template, request
 from Shuttle import Shuttle
 from weather import Weather
+import maptest
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
     return render_template('map.html')
+
 
 @app.route('/', methods=['POST'])
 def get_value():
@@ -28,15 +31,17 @@ def get_value():
 
     print(eta)
     print(condition)
+    print(test.type)
+    print(test.pop)
 
-    return render_template('map.html', eta=eta, condition=condition)
+    return render_template('map.html', eta=eta, condition=condition, vehicle=test.type, riders=test.pop)
 
 
 def main():
     pass
 
 
-
 if __name__ == "__main__":
     # creates a webserver -Jalen
+    main()
     app.run(debug=True)
