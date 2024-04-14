@@ -1,0 +1,8 @@
+<div id="map"></div>
+<script>
+    const watchID = navigator.geolocation.watchPosition(position => {
+        const { latitude, longitude } = position.coords;
+        console.log("watchID - " + watchID)
+            map.innerHTML = '<iframe width="700" height="300" src="https://maps.google.com/maps?q='+latitude+',' +longitude+'&amp;z=15&amp;output=embed"></iframe>'
+    });
+</script>
