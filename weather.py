@@ -1,5 +1,6 @@
 import requests
 
+
 class Weather:
 
     def __init__(self):
@@ -16,6 +17,4 @@ class Weather:
         self.condition = response.json()['current']['condition']['text']
         self.precipitation = response.json()['current']['precip_in']
 
-        if self.precipitation > 1:
-            # given in seconds
-            self.delay = float((self.precipitation//5)*300)
+        self.delay = float((self.precipitation//5)*300)

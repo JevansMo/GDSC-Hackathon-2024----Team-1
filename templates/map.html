@@ -37,10 +37,22 @@
         
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_bbaf9fd895376f359991e52f0498b463" ></div>
-        
+    <form name="destination" action="." method="post">
+        <label>Destination:</label>
+        <label>
+            <input type="text" name="destination">
+        </label>
+        <input type="submit" value="submit">
+    </form>
+
+    <h1>ETA: {{eta}}</h1>
+    <h1>{{condition}}</h1>
+
+
+
+    <div class="folium-map" id="map_bbaf9fd895376f359991e52f0498b463" ></div>
+
+
 </body>
 <script>
     
